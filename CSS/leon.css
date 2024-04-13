@@ -1,0 +1,12 @@
+/* Start Variables */
+/* End Variables */
+/* Start Global */
+*{
+   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body{
+  font-family: "work sans",sans-serif;
+}
+/* End Global */
