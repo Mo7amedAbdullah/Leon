@@ -1,39 +1,132 @@
 /* Start Variables */
 /* End Variables */
 /* Start Global */
-*{
-   box-sizing: border-box;
+* {
+  box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-body{
-  font-family: "work sans",sans-serif
+
+body {
+  font-family: "work sans", sans-serif
 }
-.parent{
+
+.parent {
   background-color: #eee;
 }
-.container{
-  margin:0 auto ;
-  padding:0 15px;
-  background-color: #aaa;
-  
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
 }
+
 /* Small */
 @media (min-width:768px) {
-  .container{
+  .container {
     width: 750px;
   }
 }
+
 /* Medium */
 @media (min-width:992px) {
   .container {
     width: 970px;
   }
 }
+
 /* Large */
 @media (min-width:1200px) {
   .container {
     width: 1170px;
   }
 }
+
 /* End Global */
+
+/* Start Header*/
+.header {
+  padding: 20px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container .logo {
+  width: 60px;
+}
+
+.header .container .links {
+  position: relative;
+}
+
+.header .container .links:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+
+.header .container .links .icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 30px;
+}
+
+.header .container .links .icon span {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: #333;
+}
+
+.header .container .links .icon span:nth-child(2) {
+  width: 60%;
+  transition: 0.3s;
+}
+
+.header .links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 15px);
+  background-color: #f6f6f6;
+  min-width: 200px;
+  border-radius: 5px;
+  display: none;
+  transition: 0.3s;
+}
+
+.header .links:hover ul {
+  display: block;
+}
+
+.header .links ul:before {
+  content: "";
+  border: solid 10px;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position: absolute;
+  top: -20px;
+  right: 5px;
+
+}
+
+.header .links ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.header .links ul li:not(:last-child) a {
+  border-bottom: 1px solid #ddd;
+}
+
+.header .links ul li a:hover {
+  padding-left: 25px;
+}
+
+/* End Header*/
