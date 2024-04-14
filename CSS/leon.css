@@ -7,6 +7,33 @@
   -moz-box-sizing: border-box;
 }
 body{
-  font-family: "work sans",sans-serif;
+  font-family: "work sans",sans-serif
+}
+.parent{
+  background-color: #eee;
+}
+.container{
+  margin:0 auto ;
+  padding:0 15px;
+  background-color: #aaa;
+  
+}
+/* Small */
+@media (min-width:768px) {
+  .container{
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
 }
 /* End Global */
