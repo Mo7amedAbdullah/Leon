@@ -2,6 +2,8 @@
 :root {
   --main-color: #10cab7;
   --secondary-color: #2c4755;
+  --background-color: #f6f6f6;
+  --section-padding: 50px;
 }
 
 /* End Variables */
@@ -126,7 +128,7 @@ body {
   position: absolute;
   right: 0;
   top: calc(100% + 15px);
-  background-color: #f6f6f6;
+  background-color: var(--background-color);
   min-width: 200px;
   border-radius: 5px;
   display: none;
@@ -197,8 +199,9 @@ body {
 /* End Landing Section */
 /* Start Feetures */
 .feetures {
-  padding: 60px 0;
-  background-color: #f6f6f6;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--background-color);
 }
 
 .feetures .container {
@@ -232,6 +235,11 @@ body {
 /* End Feetures */
 
 /* Start Services */
+.services {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
 .services .services-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -299,3 +307,40 @@ body {
 }
 
 /* End Services */
+/* Start Portfolio */
+.portfolio {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--background-color);
+}
+
+.portfolio .container .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  margin-top: 80px;
+
+}
+
+.portfolio .container .card {
+  background-color: white;
+}
+
+.portfolio .container img {
+
+  max-width: 100%;
+}
+
+.portfolio .container .cards h3 {
+  margin: 20px;
+
+}
+
+.portfolio .container .cards p {
+  font-weight: 300;
+  line-height: 1.6;
+  color: #444;
+  margin: 20px 20px 0;
+}
+
+/* End Portfolio */
